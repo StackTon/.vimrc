@@ -28,8 +28,6 @@ Plugin 'vim-gitgutter'
 
 Plugin 'jiangmiao/auto-pairs'
 
-Plugin 'NLKNguyen/papercolor-theme'
-
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
@@ -38,9 +36,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set termguicolors
-set t_Co=256   " This is may or may not needed.
-
-colorscheme PaperColor
+set background=light
+colorscheme solarized8
 
 let g:ale_linters = {'javascript': ['eslint']}
 let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
